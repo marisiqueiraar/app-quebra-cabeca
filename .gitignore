@@ -1,0 +1,25 @@
+# Dependências
+node_modules
+
+# Build
+dist
+dist-ssr
+*.local
+
+# Vercel
+.vercel
+
+# Config local de preview (Claude)
+.claude
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Editores / SO
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db

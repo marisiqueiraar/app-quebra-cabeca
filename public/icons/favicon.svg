@@ -1,0 +1,14 @@
+<svg width="64" height="64" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="96" fill="#2e7d32" />
+  <clipPath id="cena">
+    <rect x="64" y="64" width="384" height="384" rx="56" />
+  </clipPath>
+  <rect x="64" y="64" width="384" height="384" rx="56" fill="#fbf7ef" />
+  <g clip-path="url(#cena)">
+    <rect x="64" y="64" width="384" height="240" fill="#cfeafe" />
+    <circle cx="180" cy="170" r="48" fill="#f4a93b" />
+    <path d="M64 320 L210 170 L320 290 L360 250 L448 340 L448 320 Z" fill="#43a047" />
+    <path d="M64 360 L180 250 L300 360 Z" fill="#2e7d32" />
+    <rect x="64" y="320" width="384" height="128" fill="#43a047" />
+  </g>
+</svg>

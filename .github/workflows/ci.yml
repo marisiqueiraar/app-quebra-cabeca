@@ -1,0 +1,27 @@
+name: CI
+
+# Verifica que o app compila e gera o build em toda PR e push na main.
+# Não depende de nenhum segredo — fica verde mesmo antes de configurar o Vercel.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Build do app
+        run: npm run build
