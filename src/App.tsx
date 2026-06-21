@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import './App.css'
 import type { Foto } from './tipos'
-import type { Dificuldade } from './dificuldades'
+import { DIFICULDADES, type Dificuldade } from './dificuldades'
 import { carregarFotos } from './dados/carregarFotos'
+import { listarProgresso } from './dados/progresso'
 import { Album } from './telas/Album'
 import { EscolherDificuldade } from './telas/EscolherDificuldade'
 import { Jogo } from './telas/Jogo'
@@ -27,6 +28,26 @@ function App() {
       .then(setFotos)
       .catch((e) => setErro(e.message))
   }, [])
+
+  // Jogos em andamento neste aparelho (para "Continuar montando").
+  // Recalcula ao voltar para o álbum (depende de `tela`).
+  const emAndamento = useMemo(() => {
+    if (!fotos) return []
+    return listarProgresso()
+      .map((p) => {
+        const f = fotos.find((x) => x.id === p.fotoId)
+        const d = DIFICULDADES.find((x) => x.id === p.dificuldadeId)
+        if (!f || !d) return null
+        return { foto: f, dificuldade: d, feitas: p.colocadas.length, total: p.total }
+      })
+      .filter((x): x is NonNullable<typeof x> => x !== null)
+  }, [fotos, tela])
+
+  function continuar(f: Foto, d: Dificuldade) {
+    setFoto(f)
+    setDificuldade(d)
+    setTela('jogo')
+  }
 
   // Estados de carregamento / erro / vazio (antes de ter a estante).
   if (erro || fotos === null || fotos.length === 0) {
@@ -80,6 +101,8 @@ function App() {
   return (
     <Album
       fotos={fotos}
+      emAndamento={emAndamento}
+      aoContinuar={continuar}
       aoEscolher={(f) => {
         setFoto(f)
         setTela('dificuldade')

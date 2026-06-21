@@ -20,7 +20,7 @@ testar no celular antes de aprovar.
 - [x] **PR 2 — Pipeline de fotos**
 - [x] **PR 3 — Navegação + escolha de dificuldade**
 - [x] **PR 4 — Motor do quebra-cabeça**
-- [ ] PR 5 — Salvar e continuar
+- [x] **PR 5 — Salvar e continuar**
 - [ ] PR 6 — Recompensa, voz & texto do lugar
 - [ ] PR 7 — Polimento & acessibilidade final
 

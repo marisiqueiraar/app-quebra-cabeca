@@ -3,6 +3,7 @@ import type { Foto } from '../tipos'
 import { totalDePecas, type Dificuldade } from '../dificuldades'
 import { Cabecalho } from '../componentes/Cabecalho'
 import { gerarPecas, embaralhar } from '../quebra-cabeca/pecas'
+import { carregarProgresso, salvarProgresso, apagarProgresso } from '../dados/progresso'
 
 interface Props {
   foto: Foto
@@ -27,10 +28,21 @@ export function Jogo({ foto, dificuldade, aoVoltar, aoConcluir }: Props) {
 
   const todasPecas = useMemo(() => gerarPecas(colunas, linhas), [colunas, linhas])
 
+  // Retoma um jogo salvo neste aparelho, se houver e for válido.
+  const salvo = useMemo(() => {
+    const s = carregarProgresso(foto.id, dificuldade.id)
+    if (s && s.total === total && s.colocadas.length + s.bandeja.length === total) {
+      return s
+    }
+    return null
+  }, [foto.id, dificuldade.id, total])
+
   const [bandeja, setBandeja] = useState<number[]>(() =>
-    embaralhar(todasPecas.map((p) => p.id)),
+    salvo ? salvo.bandeja : embaralhar(todasPecas.map((p) => p.id)),
   )
-  const [colocadas, setColocadas] = useState<number[]>([])
+  const [colocadas, setColocadas] = useState<number[]>(() =>
+    salvo ? salvo.colocadas : [],
+  )
   const [arrastando, setArrastando] = useState<{ id: number; x: number; y: number } | null>(null)
   const [tamCelula, setTamCelula] = useState({ w: 0, h: 0 })
   const [celulaAlvo, setCelulaAlvo] = useState<{ col: number; linha: number } | null>(null)
@@ -43,6 +55,24 @@ export function Jogo({ foto, dificuldade, aoVoltar, aoConcluir }: Props) {
   useEffect(() => {
     if (concluido) aoConcluir?.()
   }, [concluido, aoConcluir])
+
+  // Salva o progresso a cada peça encaixada; apaga ao concluir.
+  useEffect(() => {
+    if (concluido) {
+      apagarProgresso(foto.id, dificuldade.id)
+      return
+    }
+    if (colocadas.length > 0) {
+      salvarProgresso({
+        fotoId: foto.id,
+        dificuldadeId: dificuldade.id,
+        colocadas,
+        bandeja,
+        total,
+        atualizadoEm: Date.now(),
+      })
+    }
+  }, [colocadas, bandeja, concluido, foto.id, dificuldade.id, total])
 
   // Posição do fundo (recorte) para a peça na coluna/linha indicada.
   function estiloRecorte(col: number, linha: number): CSSProperties {
@@ -89,6 +119,7 @@ export function Jogo({ foto, dificuldade, aoVoltar, aoConcluir }: Props) {
   }
 
   function recomecar() {
+    apagarProgresso(foto.id, dificuldade.id)
     setColocadas([])
     setBandeja(embaralhar(todasPecas.map((p) => p.id)))
   }
