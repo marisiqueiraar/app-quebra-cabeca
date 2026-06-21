@@ -4,6 +4,7 @@ import { totalDePecas, type Dificuldade } from '../dificuldades'
 import { Cabecalho } from '../componentes/Cabecalho'
 import { gerarPecas, embaralhar } from '../quebra-cabeca/pecas'
 import { carregarProgresso, salvarProgresso, apagarProgresso } from '../dados/progresso'
+import { falar, pararFala, temVoz } from '../audio/falar'
 
 interface Props {
   foto: Foto
@@ -51,10 +52,18 @@ export function Jogo({ foto, dificuldade, aoVoltar, aoConcluir }: Props) {
 
   const tabuleiroRef = useRef<HTMLDivElement>(null)
   const concluido = colocadas.length === total
+  const textoNarracao = `${foto.titulo}. ${foto.descricao ?? ''}`.trim()
 
+  // Ao concluir: avisa o pai e narra o nome + descrição do lugar em voz alta.
   useEffect(() => {
-    if (concluido) aoConcluir?.()
-  }, [concluido, aoConcluir])
+    if (concluido) {
+      aoConcluir?.()
+      falar(textoNarracao)
+    }
+  }, [concluido, aoConcluir, textoNarracao])
+
+  // Para a fala ao sair desta tela.
+  useEffect(() => () => pararFala(), [])
 
   // Salva o progresso a cada peça encaixada; apaga ao concluir.
   useEffect(() => {
@@ -193,12 +202,38 @@ export function Jogo({ foto, dificuldade, aoVoltar, aoConcluir }: Props) {
 
       {concluido ? (
         <div className="parabens" role="alert">
+          <div className="confete" aria-hidden="true">
+            <span>🎉</span>
+            <span>✨</span>
+            <span>🎊</span>
+            <span>⭐</span>
+            <span>🎉</span>
+          </div>
           <p className="parabens-texto">🎉 Você conseguiu!</p>
+          <img className="foto-premio" src={imagemUrl} alt={foto.titulo} />
+          <h2 className="premio-titulo">{foto.titulo}</h2>
+          {foto.descricao && <p className="premio-descricao">{foto.descricao}</p>}
           <div className="acoes-jogo">
-            <button type="button" className="botao-acao destaque" onClick={recomecar}>
+            {temVoz() && (
+              <button
+                type="button"
+                className="botao-acao destaque"
+                onClick={() => falar(textoNarracao)}
+              >
+                🔊 Ouvir de novo
+              </button>
+            )}
+            <button type="button" className="botao-acao" onClick={recomecar}>
               Jogar de novo
             </button>
-            <button type="button" className="botao-acao" onClick={aoVoltar}>
+            <button
+              type="button"
+              className="botao-acao"
+              onClick={() => {
+                pararFala()
+                aoVoltar()
+              }}
+            >
               Voltar
             </button>
           </div>
