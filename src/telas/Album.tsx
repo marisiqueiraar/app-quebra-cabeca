@@ -1,6 +1,8 @@
+import { useState } from 'react'
 import type { Foto } from '../tipos'
 import type { Dificuldade } from '../dificuldades'
 import { Cabecalho } from '../componentes/Cabecalho'
+import { ComoInstalar } from '../componentes/ComoInstalar'
 
 interface ItemAndamento {
   foto: Foto
@@ -20,6 +22,7 @@ interface Props {
 // não terminados, aparece "Continuar montando" para retomar de onde parou.
 export function Album({ fotos, emAndamento, aoEscolher, aoContinuar }: Props) {
   const base = import.meta.env.BASE_URL
+  const [mostrarAjuda, setMostrarAjuda] = useState(false)
 
   return (
     <div className="tela">
@@ -71,8 +74,13 @@ export function Album({ fotos, emAndamento, aoEscolher, aoContinuar }: Props) {
         </ul>
       </main>
       <footer className="rodape">
-        <p>Feito com carinho. Versão de testes 0.5</p>
+        <button type="button" className="botao-acao" onClick={() => setMostrarAjuda(true)}>
+          ❓ Como instalar no celular
+        </button>
+        <p>Feito com carinho. Versão de testes 1.0</p>
       </footer>
+
+      {mostrarAjuda && <ComoInstalar aoFechar={() => setMostrarAjuda(false)} />}
     </div>
   )
 }

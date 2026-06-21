@@ -448,3 +448,58 @@
 @media (prefers-reduced-motion: reduce) {
   .confete span { animation: none; }
 }
+
+/* Como instalar (ajuda) */
+.modal-ajuda {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.caixa-ajuda {
+  background: var(--creme);
+  border-radius: 20px;
+  padding: 24px;
+  max-width: 460px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.caixa-ajuda h2 {
+  margin-top: 0;
+  color: var(--verde);
+  text-align: center;
+}
+
+.caixa-ajuda h3 {
+  color: var(--verde);
+  margin-bottom: 6px;
+}
+
+.caixa-ajuda ol {
+  margin: 0 0 12px;
+  padding-left: 24px;
+}
+
+.caixa-ajuda li {
+  margin-bottom: 8px;
+  font-size: 1.15rem;
+}
+
+.nota-ajuda {
+  font-size: 1.15rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.rodape .botao-acao {
+  margin-bottom: 10px;
+}
