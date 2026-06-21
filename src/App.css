@@ -380,3 +380,25 @@
   max-height: 75vh;
   border-radius: 12px;
 }
+
+/* Continuar montando */
+.continuar {
+  width: 100%;
+}
+
+.titulo-secao {
+  font-size: 1.4rem;
+  color: var(--verde);
+  margin: 0 0 12px;
+}
+
+.cartao-continuar {
+  border-color: var(--sol);
+}
+
+.progresso-foto {
+  padding: 0 16px 14px;
+  font-size: 1.05rem;
+  color: var(--texto-suave);
+  text-align: center;
+}
