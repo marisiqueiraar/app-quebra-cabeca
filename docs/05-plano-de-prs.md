@@ -22,7 +22,9 @@ testar no celular antes de aprovar.
 - [x] **PR 4 — Motor do quebra-cabeça**
 - [x] **PR 5 — Salvar e continuar**
 - [x] **PR 6 — Recompensa, voz & texto do lugar**
-- [ ] PR 7 — Polimento & acessibilidade final
+- [x] **PR 7 — Polimento & acessibilidade final**
+
+🎉 **Todas as 7 PRs concluídas!**
 
 ## Observações
 

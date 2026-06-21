@@ -35,9 +35,22 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // Guarda em cache o app e as imagens já abertas, para reabrir offline.
+        // App em cache para abrir offline. As fotos não entram no precache
+        // (seriam pesadas); são guardadas conforme a vó abre cada uma.
         globPatterns: ['**/*.{js,css,html,svg,png,ico,woff2}'],
         cleanupOutdatedCaches: true,
+        runtimeCaching: [
+          {
+            // Depois de abrir uma foto uma vez, ela fica disponível offline.
+            urlPattern: /\/fotos\/.*\.(?:jpg|jpeg|png|webp)$/i,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'fotos-cache',
+              expiration: { maxEntries: 200, maxAgeSeconds: 60 * 60 * 24 * 60 },
+              cacheableResponse: { statuses: [0, 200] },
+            },
+          },
+        ],
       },
     }),
   ],
