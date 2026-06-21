@@ -12,8 +12,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['icons/apple-touch-icon.png', 'icons/favicon.svg'],
       manifest: {
-        name: 'Quebra-Cabeças da Vó',
-        short_name: 'Quebra-Cabeça',
+        name: 'Quebra-Cabeças da Vó Lili',
+        short_name: 'Vó Lili',
         description:
           'Quebra-cabeças com fotos das nossas viagens, feitos com carinho para a vó.',
         lang: 'pt-BR',

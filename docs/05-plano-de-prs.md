@@ -16,8 +16,8 @@ testar no celular antes de aprovar.
 
 ## Status
 
-- [x] **PR 1 — Fundação & documentação** (esta entrega)
-- [ ] PR 2 — Pipeline de fotos
+- [x] **PR 1 — Fundação & documentação**
+- [x] **PR 2 — Pipeline de fotos**
 - [ ] PR 3 — Tela inicial / álbum
 - [ ] PR 4 — Motor do quebra-cabeça
 - [ ] PR 5 — Salvar e continuar

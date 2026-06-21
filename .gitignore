@@ -12,6 +12,9 @@ dist-ssr
 # Config local de preview (Claude)
 .claude
 
+# Fotos aguardando nome do lugar / confirmação para publicar (mantidas só localmente)
+fotos/_pendentes/
+
 # Logs
 logs
 *.log

@@ -8,7 +8,9 @@
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
-    "icons": "node scripts/generate-icons.mjs"
+    "icons": "node scripts/generate-icons.mjs",
+    "fotos": "node scripts/processar-fotos.mjs",
+    "fotos:exemplo": "node scripts/gerar-fotos-exemplo.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",
