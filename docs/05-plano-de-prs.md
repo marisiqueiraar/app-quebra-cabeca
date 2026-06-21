@@ -18,7 +18,7 @@ testar no celular antes de aprovar.
 
 - [x] **PR 1 — Fundação & documentação**
 - [x] **PR 2 — Pipeline de fotos**
-- [ ] PR 3 — Tela inicial / álbum
+- [x] **PR 3 — Navegação + escolha de dificuldade**
 - [ ] PR 4 — Motor do quebra-cabeça
 - [ ] PR 5 — Salvar e continuar
 - [ ] PR 6 — Recompensa, voz & texto do lugar
