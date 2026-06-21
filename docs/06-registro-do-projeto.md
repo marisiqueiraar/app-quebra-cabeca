@@ -47,3 +47,24 @@ Primeira entrega. Conteúdo:
 - `vercel.json` para deploy determinístico.
 
 Resultado: um app "vazio", porém **instalável** na tela inicial e publicável.
+
+## PR 2 — Pipeline de fotos
+
+Segunda entrega. Conteúdo:
+- Script `scripts/processar-fotos.mjs` (`npm run fotos`): otimiza as imagens,
+  corrige orientação (EXIF), remove metadados/GPS, gera miniaturas e o manifesto
+  `public/fotos/albuns.json`.
+- Descrições dos lugares em `fotos/legendas.json`; guia `fotos/LEIA-ME.md`.
+- Gerador de fotos de exemplo (`npm run fotos:exemplo`) — 3 paisagens estilizadas.
+- App passa a **carregar o manifesto e exibir a estante de fotos** (grade de
+  miniaturas grandes e tocáveis).
+- Automação no Actions: `fotos.yml` processa e commita as fotos ao detectar
+  mudanças em `fotos/**`. `deploy.yml` removido (Vercel nativo cuida do deploy).
+- App renomeado para **"Quebra-Cabeças da Vó Lili"**.
+
+**Nota sobre as fotos reais:** a Mariana já adicionou ~40 fotos de viagem reais na
+pasta `fotos/`. Como estavam com nomes de arquivo do WhatsApp (não o nome do
+lugar) e o repositório é público, elas foram **guardadas localmente em
+`fotos/_pendentes/` (ignorada pelo Git, não publicada)** até definirmos os nomes
+dos lugares e confirmarmos a publicação. As fotos de exemplo seguem no app como
+demonstração.

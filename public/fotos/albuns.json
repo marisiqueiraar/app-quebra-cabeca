@@ -1,0 +1,29 @@
+[
+  {
+    "id": "exemplo-campos-do-jordao",
+    "titulo": "Campos do Jordão",
+    "descricao": "Campos do Jordão fica na serra de São Paulo. É conhecida pelo clima de montanha, friozinho e pelas casinhas que lembram a Europa.",
+    "imagem": "fotos/exemplo-campos-do-jordao.jpg",
+    "miniatura": "fotos/exemplo-campos-do-jordao.thumb.jpg",
+    "largura": 1600,
+    "altura": 1067
+  },
+  {
+    "id": "exemplo-cataratas-do-iguacu",
+    "titulo": "Cataratas do Iguaçu",
+    "descricao": "As Cataratas do Iguaçu ficam na fronteira do Brasil com a Argentina. São centenas de quedas d'água no meio da floresta — uma das maiores e mais bonitas do mundo.",
+    "imagem": "fotos/exemplo-cataratas-do-iguacu.jpg",
+    "miniatura": "fotos/exemplo-cataratas-do-iguacu.thumb.jpg",
+    "largura": 1600,
+    "altura": 1067
+  },
+  {
+    "id": "exemplo-praia-de-copacabana",
+    "titulo": "Praia de Copacabana",
+    "descricao": "A Praia de Copacabana fica no Rio de Janeiro. É uma praia famosa no mundo inteiro, com seu calçadão de pedras pretas e brancas em ondas.",
+    "imagem": "fotos/exemplo-praia-de-copacabana.jpg",
+    "miniatura": "fotos/exemplo-praia-de-copacabana.thumb.jpg",
+    "largura": 1600,
+    "altura": 1067
+  }
+]

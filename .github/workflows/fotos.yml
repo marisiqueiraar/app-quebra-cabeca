@@ -1,0 +1,50 @@
+name: Processar fotos
+
+# Automação central do projeto (requisito: gatilhos no GitHub Actions).
+# Quando uma foto nova é adicionada na pasta fotos/ (inclusive pelo celular, via
+# GitHub), este workflow otimiza, gera miniaturas e atualiza o manifesto, e
+# commita o resultado em public/fotos/. O Vercel então publica sozinho.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'fotos/**'
+  workflow_dispatch: {} # permite rodar manualmente pelo botão "Run workflow"
+
+permissions:
+  contents: write
+
+# Evita rodadas concorrentes brigando pelo mesmo push.
+concurrency:
+  group: processar-fotos
+  cancel-in-progress: false
+
+jobs:
+  processar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Processar fotos
+        run: npm run fotos
+
+      - name: Commitar fotos processadas (se houver mudança)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/fotos
+          if git diff --cached --quiet; then
+            echo "Nada para atualizar — fotos já estavam processadas."
+          else
+            git commit -m "Processar fotos automaticamente [skip ci]"
+            git push
+          fi

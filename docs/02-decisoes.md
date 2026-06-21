@@ -62,8 +62,14 @@ URL de pré-visualização** para testar no celular antes de aprovar.
 repositório público (ok aqui), mas não dá pré-visualização por PR de forma tão
 simples. Como a Mariana ofereceu a conta do Vercel, ele venceu.
 
-**Fluxo:** push na `main` → produção. Pull request → pré-visualização + comentário
-com o link na própria PR.
+**Fluxo:** push na `main` → produção. Pull request → pré-visualização (link no
+próprio painel do Vercel/GitHub).
+
+**Resolução (PR 2):** descobrimos que o repositório **já estava conectado à
+integração nativa do Vercel** — ela publica sozinha, com preview por PR. Então
+adotamos: **Vercel nativo cuida do deploy** e o **GitHub Actions cuida do
+processamento das fotos** (workflow `fotos.yml`). O `deploy.yml` foi removido para
+não haver deploy duplicado.
 
 ## D6 — Salvamento do progresso: no próprio aparelho
 
