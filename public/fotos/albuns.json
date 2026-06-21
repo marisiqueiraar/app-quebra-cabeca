@@ -1,29 +1,344 @@
 [
   {
-    "id": "exemplo-campos-do-jordao",
-    "titulo": "Campos do Jordão",
-    "descricao": "Campos do Jordão fica na serra de São Paulo. É conhecida pelo clima de montanha, friozinho e pelas casinhas que lembram a Europa.",
-    "imagem": "fotos/exemplo-campos-do-jordao.jpg",
-    "miniatura": "fotos/exemplo-campos-do-jordao.thumb.jpg",
-    "largura": 1600,
-    "altura": 1067
+    "id": "barquinho-na-praia",
+    "titulo": "Barquinho na praia",
+    "descricao": "Uma praia no fim da tarde, com o céu pintado de laranja. Um barquinho descansa sozinho na areia.",
+    "imagem": "fotos/barquinho-na-praia.jpg",
+    "miniatura": "fotos/barquinho-na-praia.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
   },
   {
-    "id": "exemplo-cataratas-do-iguacu",
-    "titulo": "Cataratas do Iguaçu",
-    "descricao": "As Cataratas do Iguaçu ficam na fronteira do Brasil com a Argentina. São centenas de quedas d'água no meio da floresta — uma das maiores e mais bonitas do mundo.",
-    "imagem": "fotos/exemplo-cataratas-do-iguacu.jpg",
-    "miniatura": "fotos/exemplo-cataratas-do-iguacu.thumb.jpg",
-    "largura": 1600,
-    "altura": 1067
+    "id": "bicicleta-a-beira-do-lago",
+    "titulo": "Bicicleta à beira do lago",
+    "descricao": "Uma bicicleta colorida encostada numa árvore, num gramado verde à beira de um lago. Um lugar calmo para passear.",
+    "imagem": "fotos/bicicleta-a-beira-do-lago.jpg",
+    "miniatura": "fotos/bicicleta-a-beira-do-lago.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
   },
   {
-    "id": "exemplo-praia-de-copacabana",
-    "titulo": "Praia de Copacabana",
-    "descricao": "A Praia de Copacabana fica no Rio de Janeiro. É uma praia famosa no mundo inteiro, com seu calçadão de pedras pretas e brancas em ondas.",
-    "imagem": "fotos/exemplo-praia-de-copacabana.jpg",
-    "miniatura": "fotos/exemplo-praia-de-copacabana.thumb.jpg",
+    "id": "campanario-de-bruges",
+    "titulo": "Campanário de Bruges",
+    "descricao": "O Campanário de Bruges, na Bélgica. É uma torre bem antiga, de tijolinhos, do tempo em que se subiam os degraus para vigiar a cidade.",
+    "imagem": "fotos/campanario-de-bruges.jpg",
+    "miniatura": "fotos/campanario-de-bruges.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "canal-de-amsterda",
+    "titulo": "Canal de Amsterdã",
+    "descricao": "Um canal de Amsterdã, na Holanda, com barquinhos enfeitados de flores na água e árvores dos dois lados.",
+    "imagem": "fotos/canal-de-amsterda.jpg",
+    "miniatura": "fotos/canal-de-amsterda.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "canal-de-bruges",
+    "titulo": "Canal de Bruges",
+    "descricao": "Um canal de água bem calmo em Bruges, na Bélgica, com casinhas antigas de tijolo e árvores na beira.",
+    "imagem": "fotos/canal-de-bruges.jpg",
+    "miniatura": "fotos/canal-de-bruges.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "canal-de-utrecht",
+    "titulo": "Canal de Utrecht",
+    "descricao": "Um canal de água cercado de árvores numa cidade da Holanda, bem tranquilo, com casinhas e bicicletas na beira.",
+    "imagem": "fotos/canal-de-utrecht.jpg",
+    "miniatura": "fotos/canal-de-utrecht.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "cantinho-de-flores",
+    "titulo": "Cantinho de flores",
+    "descricao": "Um cantinho florido encostado num muro antigo de tijolos, com flores cor-de-rosa e roxas bem bonitas.",
+    "imagem": "fotos/cantinho-de-flores.jpg",
+    "miniatura": "fotos/cantinho-de-flores.thumb.jpg",
+    "largura": 1152,
+    "altura": 1600
+  },
+  {
+    "id": "casaroes-de-londres",
+    "titulo": "Casarões de Londres",
+    "descricao": "Prédios antigos de tijolo vermelho numa rua de Londres, com um jardim de florzinhas roxas na frente.",
+    "imagem": "fotos/casaroes-de-londres.jpg",
+    "miniatura": "fotos/casaroes-de-londres.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "castelo-de-matsumoto",
+    "titulo": "Castelo de Matsumoto",
+    "descricao": "O Castelo de Matsumoto, no Japão. Um castelo preto bem antigo, refletido na água, chamado de \"Castelo do Corvo\".",
+    "imagem": "fotos/castelo-de-matsumoto.jpg",
+    "miniatura": "fotos/castelo-de-matsumoto.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "castelo-de-osaka",
+    "titulo": "Castelo de Osaka",
+    "descricao": "O Castelo de Osaka, no Japão. Um castelo grande e bonito, branco com enfeites dourados, sobre muralhas de pedra.",
+    "imagem": "fotos/castelo-de-osaka.jpg",
+    "miniatura": "fotos/castelo-de-osaka.thumb.jpg",
+    "largura": 1050,
+    "altura": 1600
+  },
+  {
+    "id": "cavalos-no-campo",
+    "titulo": "Cavalos no campo",
+    "descricao": "Cavalinhos pastando livres num campo verde de capim alto, com o céu bem azul.",
+    "imagem": "fotos/cavalos-no-campo.jpg",
+    "miniatura": "fotos/cavalos-no-campo.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "chiswick-house-em-londres",
+    "titulo": "Chiswick House, em Londres",
+    "descricao": "Um casarão branco e bonito no meio de um grande parque com árvores enormes, em Londres, na Inglaterra.",
+    "imagem": "fotos/chiswick-house-em-londres.jpg",
+    "miniatura": "fotos/chiswick-house-em-londres.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "dotonbori-em-osaka",
+    "titulo": "Dotonbori, em Osaka",
+    "descricao": "Uma rua de Osaka, no Japão, à noite, toda iluminada por letreiros coloridos. Famosa pelas comidas e luzes.",
+    "imagem": "fotos/dotonbori-em-osaka.jpg",
+    "miniatura": "fotos/dotonbori-em-osaka.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "escadaria-do-santuario",
+    "titulo": "Escadaria do santuário",
+    "descricao": "Um portão de templo japonês com uma escadaria bem longa subindo entre as árvores.",
+    "imagem": "fotos/escadaria-do-santuario.jpg",
+    "miniatura": "fotos/escadaria-do-santuario.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "jardim-com-coqueiros",
+    "titulo": "Jardim com coqueiros",
+    "descricao": "Um jardim cheio de plantas verdes e coqueiros, com mesinhas de madeira. Um lugar quentinho e gostoso de descansar.",
+    "imagem": "fotos/jardim-com-coqueiros.jpg",
+    "miniatura": "fotos/jardim-com-coqueiros.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "lago-do-amor-em-bruges",
+    "titulo": "Lago do Amor, em Bruges",
+    "descricao": "O Lago do Amor (Minnewater), em Bruges, na Bélgica. Um lago calminho, cheio de árvores refletidas na água.",
+    "imagem": "fotos/lago-do-amor-em-bruges.jpg",
+    "miniatura": "fotos/lago-do-amor-em-bruges.thumb.jpg",
+    "largura": 1130,
+    "altura": 1600
+  },
+  {
+    "id": "lanternas-de-ano-novo-em-toquio",
+    "titulo": "Lanternas de Ano Novo, em Tóquio",
+    "descricao": "Uma fileira de lanternas redondas enfeitando o caminho de um parque no Japão, comum na festa de Ano Novo.",
+    "imagem": "fotos/lanternas-de-ano-novo-em-toquio.jpg",
+    "miniatura": "fotos/lanternas-de-ano-novo-em-toquio.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "pagode-yasaka-em-kyoto",
+    "titulo": "Pagode Yasaka, em Kyoto",
+    "descricao": "Uma ruela antiga de Kyoto ao entardecer, com casinhas de madeira e um grande pagode iluminado ao fundo.",
+    "imagem": "fotos/pagode-yasaka-em-kyoto.jpg",
+    "miniatura": "fotos/pagode-yasaka-em-kyoto.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "pagode-do-kiyomizu-dera-em-kyoto",
+    "titulo": "Pagode do Kiyomizu-dera, em Kyoto",
+    "descricao": "Um pagode vermelho de um templo japonês em Kyoto, refletido na água de um laguinho.",
+    "imagem": "fotos/pagode-do-kiyomizu-dera-em-kyoto.jpg",
+    "miniatura": "fotos/pagode-do-kiyomizu-dera-em-kyoto.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "pagode-do-shitenno-ji-em-osaka",
+    "titulo": "Pagode do Shitenno-ji, em Osaka",
+    "descricao": "O topo de um pagode japonês vermelho de vários andares, com um pináculo dourado bem no alto.",
+    "imagem": "fotos/pagode-do-shitenno-ji-em-osaka.jpg",
+    "miniatura": "fotos/pagode-do-shitenno-ji-em-osaka.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "pagode-vermelho-de-kyoto",
+    "titulo": "Pagode vermelho de Kyoto",
+    "descricao": "Um lindo pagode vermelho de três andares, com telhados curvos, contra um céu azul. Templo japonês em Kyoto.",
+    "imagem": "fotos/pagode-vermelho-de-kyoto.jpg",
+    "miniatura": "fotos/pagode-vermelho-de-kyoto.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "passeio-de-bicicleta",
+    "titulo": "Passeio de bicicleta",
+    "descricao": "Uma ciclovia vermelha no meio de árvores, com o céu bem azul. Um passeio gostoso de bicicleta.",
+    "imagem": "fotos/passeio-de-bicicleta.jpg",
+    "miniatura": "fotos/passeio-de-bicicleta.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "pontezinha-florida-em-bruges",
+    "titulo": "Pontezinha florida, em Bruges",
+    "descricao": "Uma pontezinha de pedra enfeitada com flores, vista por entre as folhas das árvores. Um cantinho charmoso de Bruges.",
+    "imagem": "fotos/pontezinha-florida-em-bruges.jpg",
+    "miniatura": "fotos/pontezinha-florida-em-bruges.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "portao-de-templo-no-japao",
+    "titulo": "Portão de templo no Japão",
+    "descricao": "Um portão vermelho de templo no Japão, cheio de placas, com mais construções vermelhas lá dentro.",
+    "imagem": "fotos/portao-de-templo-no-japao.jpg",
+    "miniatura": "fotos/portao-de-templo-no-japao.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "prefeitura-de-gouda",
+    "titulo": "Prefeitura de Gouda",
+    "descricao": "Um prédio antigo e cheio de detalhes, na praça de uma cidade da Holanda, com uma feirinha de barraquinhas na frente.",
+    "imagem": "fotos/prefeitura-de-gouda.jpg",
+    "miniatura": "fotos/prefeitura-de-gouda.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "richmond-park-em-londres",
+    "titulo": "Richmond Park, em Londres",
+    "descricao": "Um parque grande com um riozinho e veados andando pelo campo, em Londres. Um lugar bem natural e tranquilo.",
+    "imagem": "fotos/richmond-park-em-londres.jpg",
+    "miniatura": "fotos/richmond-park-em-londres.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "rio-kamo-em-kyoto",
+    "titulo": "Rio Kamo, em Kyoto",
+    "descricao": "Um rio largo e raso em Kyoto, com pedras grandes para atravessar pulando de uma na outra.",
+    "imagem": "fotos/rio-kamo-em-kyoto.jpg",
+    "miniatura": "fotos/rio-kamo-em-kyoto.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "rozenhoedkaai-em-bruges",
+    "titulo": "Rozenhoedkaai, em Bruges",
+    "descricao": "O cartão-postal mais famoso de Bruges: casas antigas e a torre se refletindo na água parada do canal, ao entardecer.",
+    "imagem": "fotos/rozenhoedkaai-em-bruges.jpg",
+    "miniatura": "fotos/rozenhoedkaai-em-bruges.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "ruela-de-utrecht",
+    "titulo": "Ruela de Utrecht",
+    "descricao": "Uma ruazinha de casas antigas numa cidade da Holanda. Lá no fundo aparece uma torre bem alta de igreja.",
+    "imagem": "fotos/ruela-de-utrecht.jpg",
+    "miniatura": "fotos/ruela-de-utrecht.thumb.jpg",
     "largura": 1600,
-    "altura": 1067
+    "altura": 1086
+  },
+  {
+    "id": "santuario-fushimi-inari-em-kyoto",
+    "titulo": "Santuário Fushimi Inari, em Kyoto",
+    "descricao": "A entrada de um templo japonês em Kyoto, com um grande portão vermelho. As pessoas visitam muito no Ano Novo.",
+    "imagem": "fotos/santuario-fushimi-inari-em-kyoto.jpg",
+    "miniatura": "fotos/santuario-fushimi-inari-em-kyoto.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "santuario-heian-em-kyoto",
+    "titulo": "Santuário Heian, em Kyoto",
+    "descricao": "O grande portão de um templo japonês em Kyoto, com colunas vermelhas e telhado verde.",
+    "imagem": "fotos/santuario-heian-em-kyoto.jpg",
+    "miniatura": "fotos/santuario-heian-em-kyoto.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "santuario-meiji-em-toquio",
+    "titulo": "Santuário Meiji, em Tóquio",
+    "descricao": "O grande portão de madeira do Santuário Meiji, em Tóquio, cercado por uma floresta de árvores altas.",
+    "imagem": "fotos/santuario-meiji-em-toquio.jpg",
+    "miniatura": "fotos/santuario-meiji-em-toquio.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "templo-shitenno-ji-em-osaka",
+    "titulo": "Templo Shitenno-ji, em Osaka",
+    "descricao": "Um templo japonês muito antigo em Osaka, com colunas vermelhas e portões de guardiões.",
+    "imagem": "fotos/templo-shitenno-ji-em-osaka.jpg",
+    "miniatura": "fotos/templo-shitenno-ji-em-osaka.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "templo-iluminado-a-noite",
+    "titulo": "Templo iluminado à noite",
+    "descricao": "O cantinho de um templo japonês vermelho, iluminado à noite, com uma lanterna pendurada numa árvore.",
+    "imagem": "fotos/templo-iluminado-a-noite.jpg",
+    "miniatura": "fotos/templo-iluminado-a-noite.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "torre-eiffel-em-paris",
+    "titulo": "Torre Eiffel, em Paris",
+    "descricao": "A famosa Torre Eiffel, em Paris, na França. Uma torre gigante de ferro, conhecida no mundo todo.",
+    "imagem": "fotos/torre-eiffel-em-paris.jpg",
+    "miniatura": "fotos/torre-eiffel-em-paris.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "torre-do-castelo-de-osaka",
+    "titulo": "Torre do Castelo de Osaka",
+    "descricao": "O Castelo de Osaka visto de baixo, todo branco com enfeites dourados, em cima das muralhas de pedra.",
+    "imagem": "fotos/torre-do-castelo-de-osaka.jpg",
+    "miniatura": "fotos/torre-do-castelo-de-osaka.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
+  },
+  {
+    "id": "veado-no-riacho",
+    "titulo": "Veado no riacho",
+    "descricao": "Um veado bonito, de chifres grandes, parado dentro de um riacho num parque cheio de mato dourado.",
+    "imagem": "fotos/veado-no-riacho.jpg",
+    "miniatura": "fotos/veado-no-riacho.thumb.jpg",
+    "largura": 900,
+    "altura": 1600
+  },
+  {
+    "id": "vista-do-castelo-de-matsumoto",
+    "titulo": "Vista do Castelo de Matsumoto",
+    "descricao": "A vista de cima de um castelo japonês, mostrando um jardim grande e montanhas ao longe.",
+    "imagem": "fotos/vista-do-castelo-de-matsumoto.jpg",
+    "miniatura": "fotos/vista-do-castelo-de-matsumoto.thumb.jpg",
+    "largura": 1200,
+    "altura": 1600
   }
 ]
